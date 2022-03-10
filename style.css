@@ -2,13 +2,16 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Noto Serif Display', serif;
+  background-color: rgb(239, 241, 243);
 }
 
 header {
-  border: solid black 1px;
+  /* border-bottom: solid black 1px; */
+  margin-bottom: 3rem;
+  box-shadow: 0 0 10px #9ecaed;
 }
 nav {
-  border: solid black 1px;
   display: flex;
   justify-content: space-between;
 }
@@ -20,8 +23,38 @@ h1 {
   width: 4%;
 }
 
+/* ---- search ----- */
+form {
+  /* border: solid black 1px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  margin-bottom: 4rem;
+}
+
+form input {
+  width: 70%;
+  height: 100%;
+  font-size: 1.05rem;
+  font-weight: 500;
+  padding: 0rem 1rem;
+}
+
+form button {
+  width: 10%;
+  height: 100%;
+  font-size: 1.05rem;
+  background-color: #9ecaed;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+}
+
 img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 /* -----container ---- */
 .container {
@@ -33,20 +66,41 @@ img {
 }
 /* ------ card ------ */
 .card {
+  box-sizing: border-box;
   /* border: solid black 1px; */
-  width: 70%;
+  width: 95%;
+  height: 25rem;
   margin: 1rem;
+  box-shadow: 0 0 10px #9ecaed;
+  padding: 1rem;
 }
 
 .content {
   display: flex;
   margin-top: 1rem;
+  width: 100%;
+  height: 80%;
+  font-family: 'Source Serif Pro', serif;
+  font-weight: 500;
 }
 .content div:nth-child(1) {
-  width: 40%;
+  width: 35%;
   margin: 1rem 0.5rem 0.5rem 0rem;
+  height: 100%;
 }
 .content div:nth-child(2) {
-  width: 60%;
-  margin: 1rem 0.5rem 0.5rem;
+  width: 50%;
+  margin: 3rem 0.5rem 0.5rem 4rem;
+}
+
+.content p {
+  margin-bottom: 3rem;
+  font-size: 1.1rem;
+}
+
+.content a {
+  text-decoration: none;
+  background-color: #9ecaed;
+  padding: 0.5rem;
+  color: black;
 }
